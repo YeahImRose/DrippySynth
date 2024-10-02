@@ -1,0 +1,125 @@
+html, body {
+	max-height: 1080px;
+	max-width: 1920px;
+	width:1920px;
+	height:1080px;
+	/*overflow:hidden;*/
+	user-select: none !important;
+}
+
+body {
+	/*background: url("../assets/simpleflips_spacebg.png");*/
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	z-index: -1;
+}
+
+span {
+	font-size: 300%;
+}
+
+button {
+	width:auto;
+	z-index: 1000000 !important;
+}
+
+input {
+	z-index: 1000000 !important;
+}
+
+input[type=number] {
+	width: 150px;
+	height: 50px;
+	font-size:300%;
+}
+
+input[type=checkbox] {
+	width: 50px;
+	height: 50px;
+}
+
+canvas {
+	position: fixed;
+}
+
+#starCanvas {
+	z-index:10 !important;
+	height: 700px;
+	width: 1600px;
+	bottom: 0px;
+	left: 160px;
+}
+
+#bgCanvas {
+	z-index:9 !important;
+	height: 1080px;
+	width: 1920px;
+}
+
+.menu {
+	display: flex;
+}
+
+#starImg {
+	width:1600px;
+	height:700px;
+	position: fixed;
+	bottom: 0px;
+	left:160px;
+	opacity: 0.4;
+}
+
+.star {
+	width:1600px;
+	height:70%;
+	position:fixed;
+	bottom:0px;
+	left:160px;
+	z-index:10 !important;
+}
+
+.twinkleStar {
+	position:absolute;
+	z-index: -1;
+	pointer-events: none;
+}
+
+.bar {
+	max-height: 50%;
+	height:100px;
+	display: inline-block;
+	position: relative;
+	bottom:-85%;
+}
+
+.twinkleStar {
+	opacity: 0.6;
+}
+
+
+#parallaxBg1 {
+	position: absolute;
+	display: inline-block;
+	z-index: 1 !important;
+	left:-1920px;
+	top:0px;
+}
+
+#parallaxBg2 {
+	position: absolute;
+	display: inline-block;
+	z-index: 2 !important;
+	left:-1920px;
+	top:1px;
+}
+
+#parallaxBg3 {
+	position: absolute;
+	display: inline-block;
+	z-index: 3 !important;
+	left:-1920px;
+	top:2px;
+}
+/* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/shimmer.js"></script>
+		<script type="text/javascript" src="js/parallax-bg.js"></script>
+		<script type="text/javascript" src="js/star.js"></script>
+	</head>
+	<body id="body">
+		<div class="menu" id="menu1">
+			<span style="color:white">Size</span>
+			<input id="barCount" type="number" min="5" max="9" step="1" value="7">
+			<br>
+			<span style="color:white">Star mode</span>
+			<input id="starMode" type="checkbox" checked>
+			<br>
+			<span style="color:white">Upper bound</span>
+			<input id="barMax" type="number" min="0.05" max="1" step="0.05" value="0.8">
+			<br>
+			<span style="color:white">Lower bound</span>
+			<input id="barMin" type="number" min="0" max="0.95" step="0.05" value="0.05">
+			<br>
+			<span style="color:white">Height multiplier</span>
+			<input id="barMult" type="number" min="1" max="100" step="1" value="40">
+			<br>
+		</div>
+		<div class="menu" id="menu2"></div>
+
+		<div class="star">
+			<!--<img id="starImg" src="assets/halfAStar.png" style="display:none"/>-->
+			<canvas id="starCanvas" width="1600" height="700"></canvas>
+		</div>
+		<canvas id="bgCanvas" width="1920" height="1080"></canvas>
+
+		<!--<div id="effects">
+			<img id="parallaxBg1" class="parallaxBg" src="assets/Groovy Space Large Stars Layer.png" style="display:none">
+			<img id="parallaxBg2" class="parallaxBg" src="assets/Groovy Space Medium Stars Layer.png" style="display:none">
+			<img id="parallaxBg3" class="parallaxBg" src="assets/Groovy Space Small Stars Layer.png" style="display:none">
+
+			<div id="spaceDust"></div>
+
+			<img class="shimmer" src="assets/2 Shimmer.png" style="display:none"/>
+			<img class="shimmer" src="assets/Bup Shimmer.png" style="display:none"/>
+			<img class="shimmer" src="assets/Chomp Shimmer.png" style="display:none"/>
+			<img class="shimmer" src="assets/Half Car Shimmer.png" style="display:none"/>
+			<img class="shimmer" src="assets/Simpleflips Shimmer.png" style="display:none"/>
+			<img class="shimmer" src="assets/Star Shimmer.png" style="display:none"/>
+			<img class="shimmer" src="assets/Toadette Shimmer.png" style="display:none"/>-->
+		</div>
+	</body>
+</html>
